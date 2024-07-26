@@ -1,6 +1,4 @@
-if (typeof require !== "undefined") {
-    etymologyImages = require("./etymologyImages");
-}
+import {etymologyImages} from "./etymologyImages";
 
 let O = "◎";
 

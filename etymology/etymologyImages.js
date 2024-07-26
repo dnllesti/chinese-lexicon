@@ -1124,5 +1124,5 @@ function svg(text) {
 }
 
 if (typeof module !== "undefined") {
-    module.exports = etymologyImages;
+    module.exports = {etymologyImages};
 }
