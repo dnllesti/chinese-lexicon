@@ -8429,6 +8429,4 @@ for (let component of etymology.components) {
 }
 delete componentDict[O];
 
-if (typeof module !== "undefined") {
-module.exports = { etymologies, componentDict }
-}
+export { etymologies, componentDict }

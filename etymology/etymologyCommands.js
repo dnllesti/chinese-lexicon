@@ -301,8 +301,7 @@ function simp(simplifiedChar, traditionalChar, fragments, simpleReplacements, ch
     etymologies[simplifiedChar] = simplifiedEtymology;
 }
 
-if (typeof module !== "undefined") {
-    module.exports = {
+    export {
         etymologies,
         addEtymology,
         semsem,
@@ -329,4 +328,3 @@ if (typeof module !== "undefined") {
         radicalNote,
         O
     }
-}
