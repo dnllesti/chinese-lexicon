@@ -1,8 +1,8 @@
 console.log("Importing data...");
 
-let { etymologies, componentDict } = require("./etymology");
-let entries = require("./dictionary");
-let { getStatistics, movieCharFrequencies, bookCharFrequencies } = require("./statistics");
+import { etymologies, componentDict } from "./etymology/index.js";
+import { entries } from "./dictionary/index.js";
+import { getStatistics, movieCharFrequencies, bookCharFrequencies } from "./statistics/index.js";
 
 let simpDict = {};
 let tradDict = {};
@@ -138,8 +138,9 @@ function isSubstringMatch(text, term) {
     return text.includes(term);
 }
 
-let getGloss = require("./gloss")(getEntries);
-require("./etymology/populatePinyin")(etymologies, getEntries, getGloss);
+import { getGloss } from "./gloss/index.js";
+import { populateComponentDetails } from "./etymology/populatePinyin.js";
+populateComponentDetails(etymologies, getEntries, getGloss)
 
 for (let entry of entries) {
     let { simp } = entry;
@@ -149,8 +150,10 @@ for (let entry of entries) {
 
 console.log("Ready!");
 
-module.exports = {
-    allEntries: entries,
+let allEntries = entries
+
+export {
+    allEntries,
     simpDict,
     tradDict,
     getEntries,

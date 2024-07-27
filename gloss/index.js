@@ -18,7 +18,7 @@ let manualGlosses = {
     "的": "[possessive particle]"
 };
 
-module.exports = (getEntries) => function getGloss(word, pinyin) {
+let getEntries = (getEntries) => function getGloss(word, pinyin) {
     if (word in manualGlosses) return manualGlosses[word];
     let matchingEntries = getEntries(word);
     if (pinyin) {
@@ -53,3 +53,7 @@ module.exports = (getEntries) => function getGloss(word, pinyin) {
     }
     return gloss;
 };
+
+let getGloss = getEntries
+
+export {getGloss}

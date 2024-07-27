@@ -1,6 +1,6 @@
 // From kHanyuPinlu field in UniHan database, Unicode version: 11.0.0
 
-module.exports = {
+let pinyinFrequency = {
     "一yī": "32747",
     "丁dīng": "16",
     "七qī": "950",
@@ -4326,3 +4326,5 @@ module.exports = {
     "龜guī": "11",
     "龟guī": "11"
 };
+
+export {pinyinFrequency}

@@ -3,6 +3,7 @@
   "version": "1.0.42",
   "description": "Chinese lexicon containing definitions, character origins, and statistics",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

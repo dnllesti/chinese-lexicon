@@ -1,4 +1,4 @@
-import {etymologyImages} from "./etymologyImages";
+import {etymologyImages} from "./etymologyImages.js";
 
 let O = "◎";
 

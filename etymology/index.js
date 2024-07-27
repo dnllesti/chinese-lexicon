@@ -24,7 +24,7 @@ import {
     radicals,
     radicalNote,
     O
-} from "./etymologyCommands"
+} from "./etymologyCommands.js"
 
 icon(O, "characterless component", "Placeholder for components that are unknown objects or for which a character does not exist.");
 icon("覀", "[character component]", "覀 is a character component that does not have any meaning on its own. Represents two hands grabbing a waist in the character 要.")

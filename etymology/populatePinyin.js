@@ -22,4 +22,4 @@ function getPinyin(char, getEntries) {
     return Array.from(new Set(entries.map(x => x.pinyin.toLowerCase()))).join("; ");
 }
 
-module.exports = populateComponentDetails;
+export { populateComponentDetails };
