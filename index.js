@@ -152,6 +152,11 @@ console.log("Ready!");
 
 let allEntries = entries
 
+console.log(search("and", 1)[0].pinyin)
+console.log(search("and ", 1)[0].pinyin)
+console.log(search("and", 1)[0].pinyin)
+ 
+
 export {
     allEntries,
     simpDict,
